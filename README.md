@@ -1,10 +1,10 @@
 # Contribution-README
-# Contribution [#]: [Issue Title]
+# Contribution [1]: Add option to write logs to a file #2183
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Contribution Number:** [1]  
+**Student:** Paul Tsekpo  
+**Issue:** https://github.com/dosbox-staging/dosbox-staging/issues/2183  
+**Status:** [Phase I] [In Progress]
 
 ---
 
