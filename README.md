@@ -10,7 +10,7 @@
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+I chose this Issue because I wanted to gain some experience with 
 
 ---
 
@@ -18,19 +18,20 @@
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
-
+There issue is that there is no option to log to files once teh excutable starts up. The only option available to the user was to log to the console. 
+In other words the loguru plugin that can help with logging to a file wasnt implemented
 ### Expected Behavior
 
-[What should happen?]
+User would have options to choose between.
+Options to log to file, console, both or none 
 
 ### Current Behavior
+The only option available to teh user was to log to the console
 
-[What actually happens?]
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
+The main.cpp, dosbox.cpp where the main components affected
 
 ---
 
