@@ -10,7 +10,7 @@
 
 ## Why I Chose This Issue
 
-I chose this Issue because I wanted to gain some experience with 
+I chose this Issue because I wanted to gain some experience with the loguru logging module
 
 ---
 
@@ -18,7 +18,7 @@ I chose this Issue because I wanted to gain some experience with
 
 ### Problem Description
 
-There issue is that there is no option to log to files once teh excutable starts up. The only option available to the user was to log to the console. 
+The issue is that there is no option to log to files once teh excutable starts up. The only option available to the user was to log to the console. 
 In other words the loguru plugin that can help with logging to a file wasnt implemented
 ### Expected Behavior
 
