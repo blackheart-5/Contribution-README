@@ -38,20 +38,23 @@ The main.cpp, dosbox.cpp where the main components affected
 ## Reproduction Process
 
 ### Environment Setup
+The environment setup of this stage was to clone the repo on my local(vs code). From there, proceeded to intall the vckpg dependencies and set the environment variable path for it
+Now from there build the code to make sure it was able to build properly.
 
 [Notes on setting up your local development environment - challenges you faced, how you solved them]
 
+
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. In vs-code click on build(this builds the program and creates an executable in ./build/resources/resources-windows2022/dosbox.exe)
+2. Run the exe file
+3. Program is up and running and logs are sent to the console(before rolling logs/log to file is implemented)
 
 ### Reproduction Evidence
 
-- **Commit showing reproduction:** [Link to commit in your fork]
+- **Commit showing reproduction:** [[Link to commit in your fork](https://github.com/dosbox-staging/dosbox-staging/compare/main...blackheart-5:dosbox-staging:main)]
 - **Screenshots/logs:** [If applicable]
-- **My findings:** [What you discovered during reproduction]
+- **My findings:** [during production logs are logged on the console(no option to log to a file)]
 
 ---
 
@@ -59,30 +62,33 @@ The main.cpp, dosbox.cpp where the main components affected
 
 ### Analysis
 
-[Your analysis of the root cause - what's causing the issue?]
+It doesnt have an option for users to log into file. Config settings lacks that feature so by default logs are sent to console.
 
 ### Proposed Solution
 
-[High-level description of your fix approach]
+In dosbox.cpp add the config settings that gives user the option of where logs should be sent.
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
-**Understand:** [Restate the problem]
+**Understand:** [Config settings lacks that feature so by default logs are sent to console.]
 
-**Match:** [What similar patterns/solutions exist in the codebase?]
+**Match:** [There are other config settings that match what we are expected to do. An example is the machine config setting]
 
 **Plan:** [Step-by-step implementation plan]
 1. [Modify file X to do Y]
-2. [Add function Z]
-3. [Update tests]
+2. From the section add a string name of the config settings and
+3. later add the path to that
+4. create functions to find the next index of logs
+5. create function to delete log file/oldest
+6. create function iterator that maps fils in the dir
 
-**Implement:** [Link to your branch/commits as you work]
+**Implement:** [https://github.com/dosbox-staging/dosbox-staging/compare/main...blackheart-5:dosbox-staging:main]
 
-**Review:** [Self-review checklist - does it follow the project's contribution guidelines?]
+**Review:** [yes folows contributing.md and convention commit messages]
 
-**Evaluate:** [How will you verify it works?]
+**Evaluate:** [Check that logs folder containing log files is created in the config dir(also config file must also be editted by user to get the logs where user wants)]
 
 ---
 
