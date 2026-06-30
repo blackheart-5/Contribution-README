@@ -4,7 +4,7 @@
 **Contribution Number:** [1]  
 **Student:** Paul Tsekpo  
 **Issue:** https://github.com/dosbox-staging/dosbox-staging/issues/2183  
-**Status:** [Phase I] [In Progress]
+**Status:** [Phase IV] [Completed]
 
 ---
 
