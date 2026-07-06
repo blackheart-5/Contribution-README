@@ -24,21 +24,30 @@ Currently the Session Desktop exevutable appears to support no command line opti
 -----Uncompleted
 ### Expected Behavior
 
-Users should be able to choose between four logging destinations via the config file:
-- `console` — log to the command line interface only
-- `file` — log to a rolling log file on disk only
-- `console-and-file` — log to both simultaneously (default)
-- `off` — disable all logging
+  Users should be able tocommand line options:
+  Send messages over Session's CLI app
+  Receive messages over Session's CLI app
+  Manage contacts over Session's CLI app
+  etc
+    Print help (typically -h or --help)
+    Print version (typically -V or --version)
+    Verbose output (typically -v or --verbose)
+    Suppress or reduce output (typically -q or --quiet)
+    Start a fresh profile with a generated recovery phrase
+    Start a fresh profile with a specified recovery phrase
+    Specify the profile directory path (default: $HOME/.config/Session)
+    Launch Session in offline mode
+    Maybe ANSI colors and extended text on monitors beyond 80x25 or 132 x50 ?
+    How avbout options for duress/purge and erase the client. (Nuke and pave) ? -kill -killW(kill and wipe) -killWP (Kill, wipe, and purge client)
 
-Log files should be named `dosbox-staging-NNN.log` where NNN is a zero-padded index, stored in a `logs` subdirectory of the DOSBox config directory. A maximum of 5 log files should be kept, with the oldest deleted automatically when the limit is exceeded.
+
 
 ### Current Behavior
 
-The only option available to the user was to log to the console. There were no config settings for log destination or log file path.
+Currently the Session Desktop exevutable appears to support no command line options.
 
 ### Affected Components
 
-- `src/dosbox.cpp` — main implementation: config registration, rolling log helpers, and log setup on startup
 
 ---
 
