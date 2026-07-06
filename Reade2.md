@@ -3,14 +3,14 @@
 
 **Contribution Number:** [2]  
 **Student:** Paul Tsekpo  
-**Issue:** [https://github.com/dosbox-staging/dosbox-staging/issues/2183](https://github.com/session-foundation/session-desktop/issues/839)  
+**Issue:** (https://github.com/session-foundation/session-desktop/issues/839)  
 **Status:** Round 2 [Phase I] [Completed]
 
 ---
 
 ## Why I Chose This Issue
 
-I chose this issue because I wanted to gain experience with the loguru logging module and understand how large open-source projects handle configurable logging. It was also a well-scoped, self-contained feature that was a good fit for a first contribution.
+I chose this issue because I wanted to gain experience with Session GUI and Support for command line options.
 
 ---
 
@@ -18,8 +18,10 @@ I chose this issue because I wanted to gain experience with the loguru logging m
 
 ### Problem Description
 
-There was no option to log to files once the executable started up. The only option available to the user was to log to the console. In other words, the loguru functionality that supports logging to a file was never wired up through the config system.
+Currently the Session Desktop exevutable appears to support no command line options. In order to get the version of Session, the user has to launch the Session GUI.
 
+
+-----Uncompleted
 ### Expected Behavior
 
 Users should be able to choose between four logging destinations via the config file:
