@@ -4,7 +4,7 @@
 **Contribution Number:** [2]  
 **Student:** Paul Tsekpo  
 **Issue:** (https://github.com/session-foundation/session-desktop/issues/839)  
-**Status:** Round 2 [Phase I] [Completed]
+**Status:** Round 2 [Phase I] [unCompleted]
 
 ---
 
